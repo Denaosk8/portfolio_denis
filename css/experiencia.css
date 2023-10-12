@@ -1,0 +1,210 @@
+.experiencia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: black;
+}
+.subtitulo {
+  max-width: 3ch;
+  word-break: break-all;
+  font-size: 4.7rem;
+  margin-top: 3rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style:italic;
+  text-transform: uppercase;
+}
+.experiencia-texto {
+  margin-top: 3rem;
+  line-height: 1.2;
+  gap: 1rem;
+}
+.experiencia-texto h3 {
+  max-width: 650px;
+  font-size: 1.3rem;
+}
+
+.experiencia-texto p {
+  max-width: 500px;
+  padding: 1.1rem 0rem 1rem 0rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #d0df98;
+  position: relative;
+}
+.experiencia-texto p::before {
+  content: "";
+  display: block;
+  /*width: 500px;*/
+  height: 1px;
+  background-color: #caeaa4;
+  position: absolute;
+  top: 10px;
+}
+.experiencia-texto h3 {
+color: #f7f7f7;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: lighter;
+font-size: 1.1rem;
+line-height: 1.5;
+}
+
+.empresas {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  padding: 1rem 2rem;;
+  gap: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.empresas::before {
+content: "";
+display: block;
+width: 6px;
+height: 20px;
+background: linear-gradient(#caeaa4, #67dd0a);
+position: absolute;
+top: 20px;
+left: -6px;
+}
+.empresas h3 {
+font-size: 1rem;
+}
+.empresa-ano {
+  font-family: 'Courier New', Courier, monospace;
+position: absolute;
+width: 12ch;
+left: -110px;
+color: #5b5b5b;
+top: 22px;
+font-style: oblique;
+font-size: 0.9rem;
+}
+.empresa-posicao {
+font-style: italic;
+}
+.empresa-texto {
+font-size: 0.9rem;
+color: #7b7b7b;
+}
+.empresa-habilidades {
+display: flex;
+flex-wrap: wrap;
+font-size: 0.8rem;
+font-style: italic;
+gap: 1rem;
+}
+.empresa-habilidades li {
+padding: 0.4rem 0.8rem;
+background-color: #eeeeee;
+color: #7b7b7b;
+}
+@media (max-width: 1000px) {
+  .empresa-ano {
+    position: absolute;
+    width: 12ch;
+    left: 0;
+    color: #5b5b5b;
+    top: -20px;
+    font-style: oblique;
+    font-size: 0.9rem;
+    }
+@media (max-width: 800px) {
+  .experiencia-texto p::before {
+    content: "";
+    width: 250px;
+    height: 1px;
+    background-color: #caeaa4;
+    position: absolute;
+    top: 10px;
+    }   
+}
+}
+@media (max-width: 700px) {
+  .subtitulo {
+    max-width: 2ch;
+    word-break: break-all;
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    text-transform: uppercase;
+    }
+}
+@media (max-width: 600px) {
+  .experiencia {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+  font-size: 2rem;
+  max-width: 300px;
+  }
+  .experiencia-texto h3 {
+    font-size: 0.8rem;
+    }
+  .experiencia-texto p{
+    font-size: 0.7rem;
+  }
+  .empresas h3 {
+    font-size: 0.7rem;
+    }
+  .empresa-ano {
+  font-size: 0.6rem;
+  }
+  .empresa-posicao {
+  font-size: 0.8rem;
+  }
+  .empresa-texto {
+  font-size: 0.6rem;
+  }
+  
+  .empresa-habilidades li {
+    font-size: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #eeeeee;
+    color: #7b7b7b;
+  }
+}
+@media (max-width: 550px) {
+  .experiencia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+  }
+  .subtitulo {
+    max-width: 500px;
+    font-size: 3rem;
+    margin-top: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    text-transform: uppercase;
+  }
+  .empresas::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 20px;
+    background: linear-gradient(#caeaa4, #67dd0a);
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    }
+  .empresa-habilidades li {
+    font-size: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #eeeeee;
+    color: #7b7b7b;
+    }
+}

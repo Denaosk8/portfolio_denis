@@ -1,0 +1,100 @@
+.introducao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 6rem 10rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introducao{
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-self: center;
+}
+.introducao img {
+  max-width: 250px;
+}
+.cover .introducao img {
+height: 100%;
+object-fit: cover;
+}
+.introducao h1{
+  font-size: 1.2rem;
+  font-style:normal;
+  padding: 0rem 2rem;
+  max-width: 650px;
+  margin-bottom: 1rem;
+}
+.introducao span{
+  font-style: italic;
+  color: #5b5b5b;
+}
+.introducao p {
+  padding: 0rem 2rem;
+  font-size: 0.9rem;
+  position: relative;
+}
+.introducao p::before {
+  content: "";
+  display: block;
+  width: 80px  ;
+  height: 45px;
+  background: url("../img/selva-pedra.svg")  no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.link-behance {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6rem 2rem;
+  text-decoration: none;
+  color: #7b7b7b;
+  background-color: #caeaa4;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: #5b5b5b;
+  margin-bottom: 1rem;
+}
+.link-behance:hover {
+background-color: #67dd0a;
+padding: 0.65rem 2.05rem;
+color: black;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+.introducao h1 {
+  font-size: 1rem;
+  padding: 0rem 2rem;
+}
+.introducao p::before {
+  width: 60px  ;
+  height: 35px;
+  left:20px;
+  top: 50px;
+}
+}
+@media (max-width:600px){
+  .introducao h1 {
+  font-size: 0.9rem;
+  padding: 2rem 0rem;
+  }
+  .introducao p {
+  padding: 0rem 0rem;
+  }
+  .introducao{
+  grid-template-columns: 1fr;
+  align-items: center;
+  }
+  .introducao p::before {
+  /*width: 500px;*/
+  height: 35px;
+  left:20px;
+  top: 40px;
+}
+  .cover img {
+  object-fit: cover;
+  }
+}
